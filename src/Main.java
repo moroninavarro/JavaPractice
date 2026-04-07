@@ -6,16 +6,16 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        Game game = new Game();
+        Playable game = new Game();
         game.instructions();
         game.play();
 
     }
 }
 
-
 interface Playable {
     void play();
+    void instructions();
 }
 
 class Game implements Playable {
