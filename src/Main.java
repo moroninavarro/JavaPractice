@@ -1,17 +1,77 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+import java.util.Random;
+import java.util.Scanner;
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
 
-        System.out.println("Esto es una prueba");
-        System.out.println("Esto es una prueba2");
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        instructions();
+        game();
+
     }
-}
 
+
+
+    public static void instructions(){
+        System.out.println("Welcome to the Guess the Number Game!");
+        System.out.println("I'm thinking of a number between 1 and 100.");
+
+        System.out.println("Can you guess it?");
+    }
+
+
+    public static void game(){
+        Random rand = new Random();
+        Scanner scanner = new Scanner (System.in);
+        int number = rand.nextInt(100) + 1;
+
+        int attempts = 0;
+
+        int maxAttempts = 10;
+
+
+
+        while (attempts < maxAttempts){
+
+            System.out.print("Enter your guess: ");
+
+            int guess = scanner.nextInt();
+            attempts++;
+
+
+            if (guess < number){
+                System.out.println(" ");
+                System.out.println("Too low! Guess again.");
+
+            } else if (guess == number) {
+                System.out.println(" ");
+                System.out.println("Congratulations, you guessed the number in "+ attempts + " " + "attempts.");
+                break;
+            }
+            else if (guess > number){
+                System.out.println(" ");
+                System.out.println("Too high! Guess again.");
+            }
+
+
+
+
+
+            if(attempts < maxAttempts){
+                System.out.println(" ");
+                System.out.println("Te quedan " + (maxAttempts - attempts) + " intentos.");
+            }
+            else{
+                System.out.println("Se acabaron tus intentos, el numero era " + number );
+            }
+        }
+
+
+
+
+
+    }
+
+}
