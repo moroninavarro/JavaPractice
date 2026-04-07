@@ -1,6 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
-
+import java.util.ArrayList;
 
 
 public class Main {
@@ -14,9 +14,11 @@ public class Main {
 }
 
 
+interface Playable {
+    void play();
+}
 
-
-class Game{
+class Game implements Playable {
 
     //My function for the basic instructions for the game.
     public void instructions(){
@@ -36,6 +38,7 @@ class Game{
         int attempts = 0;
 
         int maxAttempts = 10;
+        ArrayList<Integer> guesses = new ArrayList<>();
 
 
 //Creating the loop to handle the attempts and maxAttempts of the user
@@ -47,6 +50,7 @@ class Game{
             int guess = scanner.nextInt();
             attempts++;
 
+            guesses.add(guess);
 
             if (guess < number){
                 System.out.println(" ");
@@ -55,6 +59,7 @@ class Game{
             } else if (guess == number) {
                 System.out.println(" ");
                 System.out.println("🎉 Congratulations! You guessed the number in " + attempts + " attempts.");
+                System.out.println("Your guesses were " + guesses);
                 break;
             }
             else{
@@ -69,6 +74,7 @@ class Game{
             }
             else{
                 System.out.println("Game Over! The number was " + number );
+                System.out.println("Your guesses were " + guesses);
             }
         }
 
