@@ -54,12 +54,13 @@ class Game{
 
             } else if (guess == number) {
                 System.out.println(" ");
-                System.out.println("🎉 Congratulations! You guessed the number in "+ attempts + " " + "attempts.");
+                System.out.println("🎉 Congratulations! You guessed the number in " + attempts + " attempts.");
                 break;
             }
-            else if (guess > number){
+            else{
                 System.out.println(" ");
                 System.out.println("Too high! Guess again.");
+
             }
 
             if(attempts < maxAttempts){
