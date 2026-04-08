@@ -1,32 +1,32 @@
-# Guess the Number Game - Java Project
+# Guess The Number Game - Java Project
 
 As a software engineer I want to keep improving my knowledge about programming languages. So, I developed a program using Java and IntelliJ IDEA 
 
 Basically, I developed a number guessing game where the computer generates a random number between 1 and 100, and the player has to guess it within a limited number of attempts.
 
-{Describe your purpose for writing this software.}
+The purpose of this software it was to learn more about Java. Including variables, expressions, conditionals, loops, functions and Classes.
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
-
-[Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+Tools that I used to develop the software:
 
-{Describe the programming language that you used and any libraries.}
+- IntelliJ IDEA
+- Git
+
+Programming language that I used:
+- Java
+
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
+List of websites that I found helpful in this project:
 
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [Official Documentation - Java](https://www.w3schools.com/java/default.asp)
+- [GeeksforGeeks](https://www.geeksforgeeks.org/java/interfaces-in-java/)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
+Things that I need to fix, improve, and add in the future.
 
-- Item 1
-- Item 2
-- Item 3
+- For the future, I will add a real interface to be more interactive with the user.
