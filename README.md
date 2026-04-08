@@ -4,7 +4,7 @@ As a software engineer I want to keep improving my knowledge about programming l
 
 Basically, I developed a number guessing game where the computer generates a random number between 1 and 100, and the player has to guess it within a limited number of attempts.
 
-The purpose of this software it was to learn more about Java. Including variables, expressions, conditionals, loops, functions and Classes.
+The purpose of this software it was to learn more about Java. Applying variables, expressions, conditionals, loops, functions, classes and data structure from Java Collection Framework.
 
 
 # Development Environment
