@@ -29,4 +29,5 @@ List of websites that I found helpful in this project:
 
 Things that I need to fix, improve, and add in the future.
 
-- For the future, I will add a real interface to be more interactive with the user.
+- I will improve the user interaction.
+- I will add difficulty levels.
